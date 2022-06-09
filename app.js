@@ -7,9 +7,9 @@ const app = Vue.createApp({
             age: 45,
             show: true,
             books: [
-                { title: "book 1", author: "author 1"},
-                { title: "book 2", author: "author 2"},
-                { title: "book 3", author: "author 3"}
+                { title: "book 1", author: "author 1", isFav: true },
+                { title: "book 2", author: "author 2", isFav: false },
+                { title: "book 3", author: "author 3", isFav: true },
             ]
         }
     },

@@ -15,6 +15,9 @@
             margin: 20px;
             display: inline-block;
         }
+        li.fav {
+            color: green
+        }
     </style>
 </head>
 <body>
@@ -39,7 +42,7 @@
         <!-- directive v-for-->
         <h3>Books</h3>
         <ul>
-            <li v-for="book in books">
+            <li v-for="book in books" :class="{ fav: book.isFav}">
                 <p>{{ book.title }} - {{ book.author }}</p>
             </li>
         </ul>
