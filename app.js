@@ -4,7 +4,12 @@ const app = Vue.createApp({
             title: 'The final empire',
             author: 'Brandon Senderson',
             age: 45,
-            show: true
+            show: true,
+            books: [
+                { title: "book 1", author: "author 1"},
+                { title: "book 2", author: "author 2"},
+                { title: "book 3", author: "author 3"}
+            ]
         }
     },
     methods: {
