@@ -1,6 +1,7 @@
 const app = Vue.createApp({
     data() {
         return {
+            url: "http://www.thenetninja.co.uk",
             title: 'The final empire',
             author: 'Brandon Senderson',
             age: 45,
