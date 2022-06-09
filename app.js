@@ -15,16 +15,21 @@ const app = Vue.createApp({
     },
     methods: {
         changeTitle() {
-            this.title = 'New final empire'
+            this.title = 'New final empire';
         },
         toggleBooks() {
-            this.show = !this.show
+            this.show = !this.show;
         },
         handleEvent() {
-            console.log('event')
+            console.log('event');
         },
-        changeClass(index) {
-            this.books[index].isFav = !this.books[index].isFav
+        toggleFav(book) {
+            book.isFav = !book.isFav;
+        }
+    },
+    compute: {
+        filteredBooks() {
+            return this.books.filter((book) => book.isFav).length()
         }
     }
     // template: '<h2>I am the template now</h2>'
