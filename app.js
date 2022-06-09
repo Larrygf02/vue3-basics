@@ -22,6 +22,9 @@ const app = Vue.createApp({
         },
         handleEvent() {
             console.log('event')
+        },
+        changeClass(index) {
+            this.books[index].isFav = !this.books[index].isFav
         }
     }
     // template: '<h2>I am the template now</h2>'
