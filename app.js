@@ -13,6 +13,9 @@ const app = Vue.createApp({
         },
         toggleBooks() {
             this.show = !this.show
+        },
+        handleEvent() {
+            console.log('event')
         }
     }
     // template: '<h2>I am the template now</h2>'
